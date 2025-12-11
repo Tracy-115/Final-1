@@ -37,6 +37,12 @@ int main(){
             count = p.second;
         }
     }
+  cout << "The airporr with the most count " << count << " : " << endl;
+  for (auto &p : traff) {
+        if (p.second == count) {
+            cout << p.first << " " << p.second << endl;
+        }
+    }
   return 0;
   
 }
