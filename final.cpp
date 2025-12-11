@@ -6,7 +6,7 @@
 
 using namespace std; 
 //a part of milestone 3
-void printRange(const map<string,int>& traff, int low, int high) {
+void print(const map<string,int>& traff, int low, int high) {
   cout << "Range from " << low << ", " << high << "\n";
   for (auto &p : traff) {
     if (p.second >= low && p.second <= high) {
@@ -53,7 +53,8 @@ int main(){
         }
     }
   //milestone 3
-  
+    print(traff, 5, 8);
+    print(traff, 9, 12);
   return 0;
   
 }
