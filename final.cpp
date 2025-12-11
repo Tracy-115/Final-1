@@ -7,7 +7,7 @@
 using namespace std; 
 //a part of milestone 3
 void print(const map<string,int>& traff, int low, int high) {
-  cout << "Range from " << low << ", " << high << "\n";
+  cout << "Range from " << low << ", " << high << ": \n";
   for (auto &p : traff) {
     if (p.second >= low && p.second <= high) {
         cout << p.first << " " << p.second << endl;
@@ -39,6 +39,7 @@ int main(){
   for (auto &p : traff) {
       cout << p.first << " " << p.second << endl;
   }
+  cout << endl;
   //milestone 2
   int count = 0;
   for (auto &p : traff) {
@@ -52,9 +53,11 @@ int main(){
             cout << p.first << " " << p.second << endl;
         }
     }
+  cout << endl;
   //milestone 3
-    print(traff, 5, 8);
-    print(traff, 9, 12);
+  print(traff, 5, 8);
+  cout << endl;
+  print(traff, 9, 12);
   return 0;
   
 }
