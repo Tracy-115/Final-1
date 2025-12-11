@@ -4,7 +4,16 @@
 #include <string>
 #include <map>
 
-using namespace std;
+using namespace std; 
+//a part of milestone 3
+void printRange(const map<string,int>& traff, int low, int high) {
+  cout << "Range from " << low << ", " << high << "\n";
+  for (auto &p : traff) {
+    if (p.second >= low && p.second <= high) {
+        cout << p.first << " " << p.second << endl;
+    }
+  }
+}
 int main(){
   //milestone 1
   map<string, int> traff;
@@ -43,6 +52,8 @@ int main(){
             cout << p.first << " " << p.second << endl;
         }
     }
+  //milestone 3
+  
   return 0;
   
 }
